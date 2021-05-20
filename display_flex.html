@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                display: flex;
+            }
+            header #profile_image {
+                width: 100px;
+                height: 100px;
+            }
+            header .profile_name {
+                display: flex;
+                margin:auto;
+            }
+            header #follow {
+                height: 40px;
+                width: 80px;
+                border-radius: 10px;
+                background-color: antiquewhite;
+                margin: auto 50px auto auto;
+            }
+            header #follow:hover{
+                background-color:#158bb8;
+                color: white;
+            }
+            footer {
+                display: flex;
+            }
+            footer .state{
+                display: flex;
+                margin-left: 10px;
+            }
+            footer .state .likes{
+                padding-left: 10px;
+            }
+            footer .cta {
+                margin: 0 10px 0 auto;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="profile_image" src="https://i.pinimg.com/564x/60/51/fe/6051fead40d8bc60e101fe2932a07bc0.jpg" alt="profile image">
+            <div class="profile_name">
+                <h3>Christina Karen</h1>
+                <h4>@chris29</h2>
+            </div>
+            <button id="follow">FOLLOW</button>
+        </header>
+        
+        <div class="inner">
+            <p>
+            I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.
+            </p>
+            <span class="date">
+                <time>2021/05/20</time>
+            </span>
+        </div>
+        <hr>
+        <footer>
+            <div class="state">
+                <div class="Retweets">
+                    <strong>107</strong> Retweets
+                </div>
+                <div class="likes">
+                    <strong>431</strong> Likes
+                </div>
+             </div>
+            </div>
+            <div class="cta">
+              <button class="share-btn">Share</button>
+              <button class="retweet-btn">Retweet</button>
+              <button class="like-btn">Like</button>
+        </footer>
+       
+    </body>
+
+</html>
