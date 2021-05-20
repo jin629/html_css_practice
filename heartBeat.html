@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .background {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0px; 
+                left: 0px;
+                background-color: white;
+                animation-name: background-beat;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+
+            .heart {
+                position: absolute;
+                background-color: pink;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                transform: rotate(-45deg);
+                animation-name: heart-beat;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+
+            .heart::after {
+                content: "";
+                position: absolute;
+                background-color: pink;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                top: 0px;
+                bottom: 0px;
+                left: 45px;
+                right: 0px;
+                border-radius: 50%;
+            }
+
+            .heart::before {
+                content: "";
+                position: absolute;
+                background-color: pink;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                top: -90px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                border-radius: 50%;
+            }
+
+            @keyframes background-beat {
+                50%{
+                    background-color: #ffe6f2;
+                }
+            }
+
+            @keyframes heart-beat {
+                0% {
+                    transform: rotate(-45deg) scale(1);
+                }
+                50% {
+                        
+                    transform: rotate(-45deg) scale(0.5);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="heart"></div>
+        </div>
+    </body>
+</html>

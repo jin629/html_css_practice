@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .rectangle {
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(25deg, violet, #ffcccc);
+                border-radius: 50px;
+                position: relative;
+                animation-name: bounce;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes bounce {
+                0% {
+                    left: 0px;
+                    width: 75px;
+                    
+                }
+                25% {
+                    width: 100px;
+                    left: 210px;
+                }
+                50% {
+                    width: 75px;
+                    left: 400px;
+                }
+                75% {
+                    width: 100px;
+                    left: 210px;
+                }
+                100% {
+                    left: 0px;
+                    width: 75px;
+                }
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div class="border"><div class="rectangle"></div></div>
+        
+    </body>
+</html>

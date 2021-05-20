@@ -1,0 +1,53 @@
+<!DOCTYPR html>
+<html>
+    <head>
+        <style>
+            .heart{
+                width: 80px;
+                height: 80px;
+                background-color: pink;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+
+            .heart::before {
+                content: "";
+                width: 80px;
+                height: 80px;
+                background-color: pink;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 35px;
+                right: 0;
+                bottom: 0;
+                border-radius: 50%;
+            }
+
+            .heart::after {
+                content: "";
+                width: 80px;
+                height: 80px;
+                background-color: pink;
+                position: absolute;
+                margin: auto;
+                top: -70px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="heart">
+
+        </div>
+    </body>
+</html> 

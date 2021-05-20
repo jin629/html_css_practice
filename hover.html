@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <style>
+             #first {
+                 background-color: purple ;
+                 color: white;
+                 border-radius: 15%;
+                 width: 75px;
+                 height: 30px;
+                 border: none;
+             }
+
+             #first:hover {
+                background-color: pink;
+             }
+
+             #second {
+                 background-color: darkcyan;
+                 color: white;
+                 border-radius: 15%;
+                 width: 75px;
+                 height: 30px;
+                 border: none;
+             }
+
+             #second:hover {
+                 animation-name: button-hover;
+                 animation-duration: 50ms;
+                 animation-fill-mode: forwards;
+             }
+             @keyframes button-hover {
+                100% {
+                    background-color: yellowgreen;
+                }
+             }
+         </style> 
+     </head>
+     <body>
+        <button id="first">Submit</button>
+        <button id="second">Submit</button>
+     </body>
+</html>
